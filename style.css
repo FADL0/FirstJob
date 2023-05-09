@@ -1,0 +1,208 @@
+* {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+@font-face {
+    src: url('fonts/LeagueMonoVariable.ttf');
+    font-family: 'LeagueMonoVariable';
+    font-style: normal;
+    font-stretch: 1% 500%;
+}
+
+/* FirstPage */
+.FirstPage {
+    background-color: black;
+    padding-top: 19%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.logoContainer {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 450px;
+    height: 250px;
+
+}
+
+.whiteContainer {
+
+    position: relative;
+    top: 10%;
+    background-color: whitesmoke;
+    height: 35%;
+    width: 90%;
+}
+
+.lareserve {
+    font-weight: 500;
+    position: relative;
+    bottom: 85%;
+    color: #82151b;
+    font-family: 'Calisto MT';
+    font-size: 56px;
+}
+
+.lareserve span {
+    position: relative;
+    top: 30px;
+    font-size: 152px;
+}
+
+.lareserve span:hover {
+    color: #d7232a;
+}
+
+.LogoDescription {
+    font-weight: 500;
+    font-family: 'Segoe UI';
+    font-size: 28px;
+    padding-top: 20%;
+    color: whitesmoke;
+}
+
+.BurningArrow {
+    position: relative;
+    top: 45px;
+    border-radius: 20px;
+    background-color: #82151b;
+    height: 50px;
+    width: 500px;
+}
+
+
+/* SecondPage */
+.Separator {
+    background-image: url('https://goo.gl/maps/qZRh5Y4U2XmHKJMy9');
+    padding-top: 600px;
+    background-color: black;
+}
+
+.NavigationMenu a {
+
+    background-color: #555252;
+    border: none;
+    color: whitesmoke;
+    padding: 25px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+.NavigationMenu {
+
+    background-image: url('./img/Pattern.jpg');
+    background-color: #6b6b6b7f;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: solid rgba(4, 3, 3, 0.353) 3px;
+}
+
+.SecondPage {
+    display: flex;
+    justify-content: center;
+}
+
+/* Animations */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(0%);
+    transition: all 3s;
+}
+
+.hidden-up {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: all 3s;
+}
+
+.hidden-down {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 3s;
+}
+
+
+
+.hidden-left {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.hidden-right {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transform: translateX(0);
+
+}
+
+/* Mobile */
+@media screen and (max-width: 601px) {
+    .LogoDescription {
+        font-size: 13px;
+
+    }
+
+    .BurningArrow {
+        top: 15px;
+        height: 20px;
+    }
+
+    .FirstPage {
+        padding-top: 40%;
+    }
+
+    .logoContainer {
+        width: 1000px;
+        height: 90px;
+    }
+
+    .lareserve {
+        font-weight: 500;
+        font-size: 25px;
+        bottom: 70%;
+    }
+
+    .lareserve span {
+        font-size: 52px;
+        top: 8px;
+    }
+}
