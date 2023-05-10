@@ -33,3 +33,20 @@ hiddenElementsDown.forEach((element) => {
 })
 
 
+/* AutoFunc */
+let scrolled = false
+addEventListener("scroll", () => {
+    scrolled = true
+    mouse.style.opacity = 0
+});
+let mouse = document.querySelector('.Mousegif')
+function yo() {
+    setTimeout(() => {
+        console.log('test');
+        if (!scrolled) {
+            mouse.style.opacity = 1
+        }
+
+    }, 4000);
+}
+yo()

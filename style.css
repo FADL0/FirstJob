@@ -20,6 +20,20 @@
 }
 
 /* FirstPage */
+@keyframes Color {
+    0% {
+        color: #82151b;
+    }
+
+    50% {
+        color: #d7232a;
+    }
+
+    100% {
+        color: #82151b;
+    }
+}
+
 .FirstPage {
     background-color: black;
     padding-top: 19%;
@@ -28,6 +42,15 @@
     display: flex;
     justify-content: space-around;
 
+}
+
+.Mousegif {
+    transition: all 1s;
+    opacity: 0;
+    position: fixed;
+    top: 85vh;
+    left: 90vw;
+    width: 150px;
 }
 
 .logoContainer {
@@ -59,14 +82,13 @@
 }
 
 .lareserve span {
+    animation: Color 4s infinite;
+    transition: all 1s;
     position: relative;
     top: 30px;
     font-size: 152px;
 }
 
-.lareserve span:hover {
-    color: #d7232a;
-}
 
 .LogoDescription {
     font-weight: 500;
@@ -88,6 +110,8 @@
 
 /* SecondPage */
 .Separator {
+
+
     background-image: url('https://goo.gl/maps/qZRh5Y4U2XmHKJMy9');
     padding-top: 600px;
     background-color: black;
@@ -125,6 +149,7 @@
 
 .SecondPage {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
