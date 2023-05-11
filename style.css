@@ -118,7 +118,7 @@
 }
 
 .NavigationMenu a {
-
+    border-radius: 20px;
     background-color: #555252;
     border: none;
     color: whitesmoke;
@@ -133,9 +133,8 @@
 }
 
 .NavigationMenu {
-
+    border-radius: 50px;
     background-image: url('./img/Pattern.jpg');
-    background-color: #6b6b6b7f;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -143,7 +142,6 @@
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer;
     border: solid rgba(4, 3, 3, 0.353) 3px;
 }
 
@@ -151,6 +149,28 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.menus {
+    display: flex;
+    gap: 50%;
+    border-radius: 50px;
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgb(41, 42, 41);
+    padding: 10px;
+    padding-left: 5vw;
+
+}
+
+.Article {
+    padding-bottom: 50px;
+    display: flex;
+}
+
+.Article img {
+    border-radius: 50px;
+    width: 100px;
 }
 
 /* Animations */
