@@ -1,6 +1,4 @@
-let Logo = document.querySelector('.logoContainer');
-let LogoName = document.querySelector('.lareserve');
-let BurningArrow = document.querySelector('.BurningArrow');
+
 /* Animations */
 
 
@@ -50,3 +48,23 @@ function yo() {
     }, 4000);
 }
 yo()
+
+/* Articles Switch */
+let CoffeeFood = document.querySelector(".coffeeFood")
+let WineCocktail = document.querySelector(".WineCocktail")
+let Article1 = document.querySelector(".menus")
+let Article2 = document.querySelector(".menus2")
+
+
+CoffeeFood.addEventListener("click", () => {
+    CoffeeFood.style.backgroundColor = "#d65f5f"
+    WineCocktail.style.backgroundColor = "#555252"
+    Article1.style.display = "flex"
+    Article2.style.display = "none"
+})
+WineCocktail.addEventListener("click", () => {
+    WineCocktail.style.backgroundColor = "#d65f5f"
+    CoffeeFood.style.backgroundColor = "#555252"
+    Article1.style.display = "none"
+    Article2.style.display = "flex"
+})

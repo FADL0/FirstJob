@@ -117,7 +117,22 @@
     background-color: black;
 }
 
-.NavigationMenu a {
+.coffeeFood {
+    border-radius: 20px;
+    background-color: #d65f5f;
+    border: none;
+    color: whitesmoke;
+    padding: 25px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+.WineCocktail {
     border-radius: 20px;
     background-color: #555252;
     border: none;
@@ -129,7 +144,6 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-
 }
 
 .NavigationMenu {
@@ -153,6 +167,18 @@
 
 .menus {
     display: flex;
+    gap: 50%;
+    border-radius: 50px;
+    margin: auto;
+    width: 50%;
+    border: solid rgba(4, 3, 3, 0.353) 3px;
+    padding: 10px;
+    padding-left: 5vw;
+
+}
+
+.menus2 {
+    display: none;
     gap: 50%;
     border-radius: 50px;
     margin: auto;
