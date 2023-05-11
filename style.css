@@ -167,6 +167,7 @@
 
 .menus {
     display: flex;
+    flex-wrap: wrap;
     gap: 50%;
     border-radius: 50px;
     margin: auto;
@@ -183,7 +184,7 @@
     border-radius: 50px;
     margin: auto;
     width: 50%;
-    border: 3px solid rgb(41, 42, 41);
+    border: solid rgba(4, 3, 3, 0.353) 3px;
     padding: 10px;
     padding-left: 5vw;
 
