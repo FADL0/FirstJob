@@ -61,10 +61,12 @@ CoffeeFood.addEventListener("click", () => {
     WineCocktail.style.backgroundColor = "#555252"
     Article1.style.display = "flex"
     Article2.style.display = "none"
+    Article2.classList.remove("show");
 })
 WineCocktail.addEventListener("click", () => {
     WineCocktail.style.backgroundColor = "#d65f5f"
     CoffeeFood.style.backgroundColor = "#555252"
     Article1.style.display = "none"
     Article2.style.display = "flex"
+    Article1.classList.remove("show");
 })

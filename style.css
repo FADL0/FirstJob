@@ -157,12 +157,14 @@
     font-size: 16px;
     margin: 4px 2px;
     border: solid rgba(4, 3, 3, 0.353) 3px;
+
 }
 
 .SecondPage {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .menus {
@@ -244,6 +246,80 @@
     transform: translateY(0);
     transform: translateX(0);
 
+}
+
+/* Footer */
+footer {
+    position: relative;
+    top: 20px;
+    background-color: black;
+    height: 100%;
+}
+
+.lareservefooter {
+    font-weight: 500;
+
+    color: #82151b;
+    font-family: 'Calisto MT';
+    font-size: 36px;
+}
+
+.lareservefooter span {
+    animation: Color 4s infinite;
+    transition: all 1s;
+    position: relative;
+    top: 20px;
+    font-size: 90px;
+}
+
+.infoblocks {
+    display: flex;
+    gap: 7vw;
+    padding-left: 5vw;
+}
+
+.firstBlock {
+
+    padding: 2%;
+    width: 20%;
+    color: whitesmoke;
+}
+
+.firstBlock p:nth-child(1) {
+    padding-top: 1%;
+    font-family: 'Calisto MT';
+    font-size: 40px;
+}
+
+.secondBlock {
+
+    padding: 3%;
+    width: 20%;
+    color: whitesmoke;
+}
+
+.secondBlock img {
+    width: 20px;
+    height: 20px;
+    padding-bottom: 30px;
+}
+
+.secondBlock img:nth-child(:last-child) {
+    padding-bottom: 0px;
+}
+
+.thirdBlock {
+    padding: 3%;
+    width: 20%;
+    color: whitesmoke;
+}
+
+.thirdBlock img {
+    padding: 20px;
+}
+
+.OneObject {
+    display: flex;
 }
 
 /* Mobile */
